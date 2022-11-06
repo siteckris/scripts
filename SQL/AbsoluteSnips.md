@@ -1,6 +1,8 @@
 
-## Check Vlog filer om de er fragmenteret
+Check Vlog filer om de er fragmenteret
+´´´
 DBCC LOGINFO
+´´´
 
 
 ## Check logfilers lokation og størrelse
