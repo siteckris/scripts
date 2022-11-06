@@ -5,11 +5,13 @@ DBCC LOGINFO
 ```
 
 
-## Check logfilers lokation og størrelse
+Check logfilers lokation og størrelse
+```sql
 DBCC SQLPERF(logspace)
+```
 
-
-## Check hvornår der sidst er taget log backup
+Check hvornår der sidst er taget log backup
+```sql
 SELECT   d.name,
          MAX(b.backup_finish_date) AS backup_finish_date
 FROM     master.sys.sysdatabases d
@@ -18,13 +20,18 @@ FROM     master.sys.sysdatabases d
          AND      b.type          = 'L'
 GROUP BY d.name
 ORDER BY backup_finish_date DESC
-
-## Run maintenance
+```
+```sql
+Run maintenance
 sqlcmd -E -S XXXServernameXXXX -d master -Q "EXECUTE dbo.IndexOptimize @Databases = 'USER_DATABASES'" -b
+```
 
-
-## List instance name - returns servername\instance
+List instance name - returns servername\instance
+```sql
 SELECT @@servername
+```
 
-## List instance name - returns instance
+List instance name - returns instance
+```sql
 SELECT @@servicename
+```
