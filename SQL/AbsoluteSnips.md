@@ -21,8 +21,9 @@ GROUP BY d.name
 ORDER BY backup_finish_date DESC
 ```
 
-```sql
+
 Run maintenance
+```sql
 sqlcmd -E -S XXXServernameXXXX -d master -Q "EXECUTE dbo.IndexOptimize @Databases = 'USER_DATABASES'" -b
 ```
 
