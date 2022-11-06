@@ -4,7 +4,6 @@ Check Vlog filer om de er fragmenteret
 DBCC LOGINFO
 ```
 
-
 Check logfilers lokation og størrelse
 ```sql
 DBCC SQLPERF(logspace)
@@ -21,6 +20,7 @@ FROM     master.sys.sysdatabases d
 GROUP BY d.name
 ORDER BY backup_finish_date DESC
 ```
+
 ```sql
 Run maintenance
 sqlcmd -E -S XXXServernameXXXX -d master -Q "EXECUTE dbo.IndexOptimize @Databases = 'USER_DATABASES'" -b
