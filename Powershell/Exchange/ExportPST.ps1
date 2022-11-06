@@ -1,0 +1,1 @@
+New-MailboxExportRequest -ContentFilter -Mailbox "mailboxname" -FilePath \\kserver\export\LastYear.pst
