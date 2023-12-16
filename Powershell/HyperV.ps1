@@ -1,5 +1,5 @@
 #List Snapshots
-Get-VM -ComputerName (Get-ClusterNode -Cluster "FQDNHypVClustername") | Get-VMSnapshot | Select VMName,Name,SnapshotType,CreationTime,ComputerName
+Get-VM -ComputerName (Get-ClusterNode -Cluster "FQDNHypVClustername") | Get-VMSnapshot | Select-Object VMName,Name,SnapshotType,CreationTime,ComputerName
 
 # Remove Snapshot 1
 Get-VMSnapshot -ComputerName "MyHyperVHost" -VMName "ServerName" | Remove-VMSnapshot
