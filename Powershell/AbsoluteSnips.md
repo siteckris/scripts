@@ -1,5 +1,7 @@
-Uninstall Microsoft Defender using powershell
-`Uninstall-WindowsFeature -Name Windows-Defender`
+- Uninstall Microsoft Defender using powershell
+    
+    `Uninstall-WindowsFeature -Name Windows-Defender`
 
-Filter on name  
-`Where-Object {$_.name -like "*win*"}'`
+- Filter on name  
+
+    `Where-Object {$_.name -like "*win*"}'`
