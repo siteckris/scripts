@@ -1,5 +1,16 @@
 # Git notes 
 
+### Naming
+
+**snapshot** - Every time you ´git commit´ to your project, you create a snapshot of all the files, history and metadata in that specific point in time
+
+**repo** - short for reposetory
+
+### Alternative GUI's
+ - Github Desktop (Add links later)
+ - Sourcetree (Add links later)
+ - GitKraken (Add links later)
+
 
 ![Stages and directories](Assets/01-dir-and-stage.jpg)
 
@@ -15,13 +26,6 @@
  - ./git (the local history of saved unmodified files)
  - Working directory (changes made to saved files live here)
  - Index/staging, sometimes reffered to as the cache (file changes ready to be commited to the next project snapshot lives here)
-
-# Naming
-
-**snapshot** - Every time you ´git commit´ to your project, you create a snapshot of all the files, history and metadata in that specific point in time
-
-**repo** - short for reposetory
-
 
 
 # Common git commands
@@ -73,8 +77,12 @@
 
 
 # Set up local environment
-
-
+ 1. Create a folder for your repo root
+ 2. Navigate into that folder
+ 3. Type `git init` to create local repo and start tracking changes
+ 4. Check the name of the main branch by typing `git branch`
+     - Type `git branch -m main` to set the name of the branch to "main"
+ 5. 
 
 
 # Working with local repos
