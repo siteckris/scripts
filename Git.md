@@ -74,20 +74,28 @@ Removing settings can be done by adding **--unset** to the command syntax
 - `git config` - sets and reads the global and local git config settings like users and reposetory
 
 - `git log` - show the history of your git commits for the current repo
+    - `git log --oneline` - show the history, with only the most important data
+    - `git log --oneline --graph` show the same as above, but show merges and forks
 
 - `git diff` - show the diff between files in the staging area and the working directory 
+    - `git diff --staged` - show the difference between whats in the staged content and the committed 
+    - `git diff --head` - show the difference on the files both on working and staging
 
 
 ### Branches
 - `git branch` - list, create or delete branches
     - `git branch feature` - create new branch called *feature*
-    - `got branch -a` - list branches in your project
+    - `git branch -a` - list branches in your project
+    - `git branch -d feature` - deletes the branch called *feature*
 
 - `git checkout` - switch between the branches
     - `git checkout feature` - switch to branch called *feature*
     - `git checkout -b feature` - creates and switches to the branch called *feature*
 
 - `git merge` - merges changes from one branch to another
+    - Make sure you are in the branch you want to merge the changes into, because you merge other feature branches into the branch you are in. **Suck them in!**
+    - `git merge feature -m "Merge feature banch onto main"` - Merges the branch named *feature* into the *main* branch
+    - **ort** is the default merge strategy for newer versions, and is a 3-way merge
 
 ### Remote Repositories
 - `git clone` - copies an entire repo to a new local .git directory
