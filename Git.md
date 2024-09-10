@@ -2,6 +2,8 @@
 
 
 ![Stages and directories](Assets/01-dir-and-stage.jpg)
+
+
 ### File stages
  - Untracked (not added to the list of files to track yet)
  - Tracked (added to the list of files)
