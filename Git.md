@@ -15,3 +15,33 @@
  - ./git (the local history of saved unmodified files)
  - Working directory (changes made to saved files live here)
  - Index/staging, sometimes reffered to as the cache (file changes ready to be commited to the next project snapshot lives here)
+
+
+# Common git commands
+
+### Git Basics
+`git init` - Creates a new git repository in the current folder and start tracking changes
+
+`git add` - move/add **modified files** into the staging area, so its ready for the next commit
+
+`git status` - shot the status of the files in the modified and staging area
+
+`git commit` - creates the snapshot and commits the changes to .git ready to be pushed
+
+`git config` - sets and reads the global and local git config settings like users and reposetory
+
+`git log` - show the history of your git commits for the current repo
+
+`git diff` - show the diff between files in the staging area and the working directory 
+
+### Git Branches
+`git branch` - list, create or delete branches
+
+`git checkout` - switch between the branches
+
+`git merge` - merges changes from one branch to another
+
+### Git Repositories
+
+
+### Git Changes
