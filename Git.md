@@ -6,6 +6,32 @@
 
 **repo** - short for reposetory
 
+### Git Configuration levels
+ - **system** (OS specific) - all users on a system
+     - Can be used when in corporate invironment or if many users log on the same computer
+ - **global** (User specific) - setting will work for all repos for the current user
+     - Can be usefull for ID and name
+ - **local** (Repo specific) - settings only used for the current repo
+     - Local overwrites global and system level
+
+
+### Needed config
+Git configuration needs both the email and username veriable set, and you set them by typing
+
+```
+git config --global user.name "YourUsername"
+git config --global user.email "yourmail@dom.lcl"
+```
+
+To see the current configured values type
+- `git config user.name`  - to se the username
+- `git config user.email` - to se the email
+- `git config --list` - to see all variables
+- `git config --global --list` - to see all **global** variables
+
+Removing settings can be done by adding **--unset** to the command syntax
+ - Like `git config --global --unset user.name` will remove the username settings under the **Global config**
+
 ### Alternative GUI's
  - Github Desktop (Add links later)
  - Sourcetree (Add links later)
