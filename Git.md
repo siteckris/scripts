@@ -16,6 +16,13 @@
  - Working directory (changes made to saved files live here)
  - Index/staging, sometimes reffered to as the cache (file changes ready to be commited to the next project snapshot lives here)
 
+# Naming
+
+**snapshot** - Every time you ´git commit´ to your project, you create a snapshot of all the files, history and metadata in that specific point in time
+
+**repo** - short for reposetory
+
+
 
 # Common git commands
 
@@ -63,3 +70,18 @@
 ### Help
 
 `git <command> --help` - Show the help/manpage for the command in browser
+
+
+# Set up local environment
+
+
+
+
+# Working with local repos
+
+
+
+# Working with others on shared repos
+
+
+
