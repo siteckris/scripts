@@ -19,9 +19,6 @@
 
 # Common git commands
 
-### Help
-
-`git <command> --help` - Show the help/manpage for the command in browser
 
 ### Basics
 `git init` - Creates a new git repository in the current folder and start tracking changes
@@ -62,3 +59,7 @@
 `git revert` - Create a new commit that undo the previous commit, but keep the repo rolling forward
 
 `git reset` - Removes files form the stating area. Destructive command 
+
+### Help
+
+`git <command> --help` - Show the help/manpage for the command in browser
