@@ -19,7 +19,11 @@
 
 # Common git commands
 
-### Git Basics
+### Help
+
+`git <command> --help` - Show the help/manpage for the command in browser
+
+### Basics
 `git init` - Creates a new git repository in the current folder and start tracking changes
 
 `git add` - move/add **modified files** into the staging area, so its ready for the next commit
@@ -34,14 +38,27 @@
 
 `git diff` - show the diff between files in the staging area and the working directory 
 
-### Git Branches
+
+### Branches
 `git branch` - list, create or delete branches
 
 `git checkout` - switch between the branches
 
 `git merge` - merges changes from one branch to another
 
-### Git Repositories
+### Remote Repositories
+`git clone` - copies an entire repo to a new local .git directory
 
+`git remote` - create and show linked repositories
 
-### Git Changes
+`git push` - sends the staged files to the assosiated remote repository
+
+`git pull` - retrieves updates from remote repositories, and merges them to the local
+
+`git fetch` - retrieves updates form remote repositories but dont merge them to your local repo
+
+### Undoing Changes
+
+`git revert` - Create a new commit that undo the previous commit, but keep the repo rolling forward
+
+`git reset` - Removes files form the stating area. Destructive command 
