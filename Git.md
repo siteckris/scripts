@@ -44,9 +44,9 @@ Removing settings can be done by adding **--unset** to the command syntax
 ### File stages
  - Untracked (not added to the list of files to track yet)
  - Tracked (added to the list of files)
-    - Unmodified (saved but not changed)
-    - Modified (changed but not staged)
-    - Staged (staged and ready to push) 
+    - Unmodified (saved and unchanged)
+    - Modified (changed but not staged or added)
+    - Staged (staged and ready to committed) 
 
 ### Directories
  - ./git (the local history of saved unmodified files)
@@ -58,48 +58,57 @@ Removing settings can be done by adding **--unset** to the command syntax
 
 
 ### Basics
-`git init` - Creates a new git repository in the current folder and start tracking changes
 
-`git add` - move/add **modified files** into the staging area, so its ready for the next commit
+ - `git init` - Creates a new git repository in the current folder and start tracking changes
 
-`git status` - shot the status of the files in the modified and staging area
+ - `git add` - move/add **modified files** into the staging area, so its ready for the next commit
+     - `git add <filename>` - add specific file
+     - `git add <foldername>/` - add folder including files
+     - `git add .` - add all unsubmitted files
+ 
+ - `git status` - shot the status of the files in the modified and staging area
 
-`git commit` - creates the snapshot and commits the changes to .git ready to be pushed
+ - `git commit` - creates the snapshot and commits the changes to .git ready to be pushed
+     - `git commit -m "message"` - commit the file to snapshot with message
 
-`git config` - sets and reads the global and local git config settings like users and reposetory
+- `git config` - sets and reads the global and local git config settings like users and reposetory
 
-`git log` - show the history of your git commits for the current repo
+- `git log` - show the history of your git commits for the current repo
 
-`git diff` - show the diff between files in the staging area and the working directory 
+- `git diff` - show the diff between files in the staging area and the working directory 
 
 
 ### Branches
-`git branch` - list, create or delete branches
+- `git branch` - list, create or delete branches
+    - `git branch feature` - create new branch called *feature*
+    - `got branch -a` - list branches in your project
 
-`git checkout` - switch between the branches
+- `git checkout` - switch between the branches
+    - `git checkout feature` - switch to branch called *feature*
+    - `git checkout -b feature` - creates and switches to the branch called *feature*
 
-`git merge` - merges changes from one branch to another
+- `git merge` - merges changes from one branch to another
 
 ### Remote Repositories
-`git clone` - copies an entire repo to a new local .git directory
+- `git clone` - copies an entire repo to a new local .git directory
 
-`git remote` - create and show linked repositories
+- `git remote` - create and show linked repositories
 
-`git push` - sends the staged files to the assosiated remote repository
+- `git push` - sends the staged files to the assosiated remote repository
 
-`git pull` - retrieves updates from remote repositories, and merges them to the local
+- `git pull` - retrieves updates from remote repositories, and merges them to the local
 
-`git fetch` - retrieves updates form remote repositories but dont merge them to your local repo
+- `git fetch` - retrieves updates form remote repositories but dont merge them to your local repo
 
 ### Undoing Changes
 
-`git revert` - Create a new commit that undo the previous commit, but keep the repo rolling forward
+- `git revert` - Create a new commit that undo the previous commit, but keep the repo rolling forward
 
-`git reset` - Removes files form the stating area. Destructive command 
+- `git reset` - Removes files form the stating area. Destructive command 
 
 ### Help
 
-`git <command> --help` - Show the help/manpage for the command in browser
+- `git <command> --help` - Show the help/manpage for the command in browser
 
 
 # Set up local environment
