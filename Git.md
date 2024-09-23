@@ -101,6 +101,8 @@ Removing settings can be done by adding **--unset** to the command syntax
 - `git clone` - copies an entire repo to a new local .git directory
 
 - `git remote` - create and show linked repositories
+    - `git remote -v` - list linked remote repos (verbose)
+    - `git remote remove origin` - deletes the link to the remote repo
 
 - `git push` - sends the staged files to the assosiated remote repository
 
@@ -129,6 +131,9 @@ Removing settings can be done by adding **--unset** to the command syntax
 
 
 # Working with local repos
+
+### Setting up remote reposetory on Github
+
 
 
 
