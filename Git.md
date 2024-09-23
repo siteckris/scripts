@@ -80,6 +80,7 @@ Removing settings can be done by adding **--unset** to the command syntax
 - `git diff` - show the diff between files in the staging area and the working directory 
     - `git diff --staged` - show the difference between whats in the staged content and the committed 
     - `git diff --head` - show the difference on the files both on working and staging
+    - `git diff main origin/main` - show the difference between what is on your local main branch, vs what is on the remote repository you have just fetched but not merged yet
 
 
 ### Branches
@@ -106,7 +107,7 @@ Removing settings can be done by adding **--unset** to the command syntax
 
 - `git push` - sends the staged files to the assosiated remote repository
     - `git push -u origin main` - syntax -u is for *up stream* to the origin main branch and feature. Usually only used the first time you push something you created locally to the remote repo. Later it will recognice the location/branch
-    - `git push main` - this should be enough to push, when the reposetory is up and running and the first pushes have been completed
+    - `git push origin main` - this should be enough to push, when the repository is up and running and the first pushes have been completed
 
 - `git pull` - retrieves updates from remote repositories, and merges them to the local
 
