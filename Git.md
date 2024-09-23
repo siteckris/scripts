@@ -105,6 +105,8 @@ Removing settings can be done by adding **--unset** to the command syntax
     - `git remote remove origin` - deletes the link to the remote repo
 
 - `git push` - sends the staged files to the assosiated remote repository
+    - `git push -u origin main` - syntax -u is for *up stream* to the origin main branch and feature. Usually only used the first time you push something you created locally to the remote repo. Later it will recognice the location/branch
+    - `git push main` - this should be enough to push, when the reposetory is up and running and the first pushes have been completed
 
 - `git pull` - retrieves updates from remote repositories, and merges them to the local
 
